@@ -1,13 +1,2 @@
-# scons -Q -c c=8 config=config/ooo_l3.conf
-# scons -Q c=8 config=config/ooo_l3.conf dramsim=`pwd`/../DRAMSim2
-
-# scons -Q -c c=8 config=config/ooo_l2.conf
-# scons -Q c=8 config=config/ooo_l2.conf dramsim=`pwd`/../DRAMSim2
-
-# scons -Q -c c=8 config=config/atom_l3.conf
-# scons -Q c=8 config=config/atom_l3.conf dramsim=`pwd`/../DRAMSim2
-
-# scons -Q -c c=8 config=config/atom_l2.conf
-# scons -Q c=8 config=config/atom_l2.conf dramsim=`pwd`/../DRAMSim2
-
-ldd qemu/qemu-system-x86_64 | grep dramsim
+scons -Q -c c=8 config=config/atom_shared_l2.conf
+scons -Q c=8 config=config/atom_shared_l2.conf
